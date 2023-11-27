@@ -25,6 +25,7 @@ viewer.scene.primitives.add(polygon.primitive)
 #       geoJson?: Cesium.DataSource//直接传递读取的geojson数据
 
 方式一：直接传递数组
+
         let positions = Cesium.Cartesian3.fromDegreesArray([108.80411007, 31.62869524, 108.760164758, 24.59744524, 118.64786007, 24.59744524,118.625887414, 31.62869524])
         let polygon = new WaterPolygon({
             positions: positions,
