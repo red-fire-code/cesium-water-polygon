@@ -4,11 +4,11 @@
 # 就是自定义了一个类、只需要new即可
 # 举例：
 
-let positions = Cesium.Cartesian3.fromDegreesArray([108.80411007, 31.62869524, 108.760164758, 24.59744524, 118.64786007, 24.59744524,118.625887414, 31.62869524,])
-let polygon = new WaterPolygon({
-    positions: positions,
-})
-viewer.scene.primitives.add(polygon.primitive)
+       let positions = Cesium.Cartesian3.fromDegreesArray([108.80411007, 31.62869524, 108.760164758, 24.59744524, 118.64786007, 24.59744524,118.625887414, 31.62869524])
+        let polygon = new WaterPolygon({
+            positions: positions,
+        })
+        viewer.scene.primitives.add(polygon.primitive)
 
 # 所以就是导入、new、添加到地图上，注意前提，由于还是基于cesium、所以必须安装cesium才能使用
 
