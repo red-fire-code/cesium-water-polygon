@@ -35,6 +35,7 @@ viewer.scene.primitives.add(polygon.primitive)
         viewer.scene.primitives.add(polygon.primitive)
 
 方式二：传入读取的json数据
+
          Cesium.GeoJsonDataSource.load(geoJson).then((dataSource) => {         
             let polygon = new WaterPolygon({           
                 geoJson: dataSource,
@@ -44,4 +45,3 @@ viewer.scene.primitives.add(polygon.primitive)
             })        
             viewer.scene.primitives.add(polygon.primitive)        
         });
-
